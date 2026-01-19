@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ChildComponent } from './child/child.component';
+import { ChildComponent } from '../child/child.component';
 
 @Component({
   selector: 'app-parent',
@@ -9,5 +9,9 @@ import { ChildComponent } from './child/child.component';
   styleUrl: './parent.component.css'
 })
 export class ParentComponent {
+ parentData: string = '';
 
+ sendDataToChild() {
+  this.parentData = 'Updated Data from Parent Component';
+}
 }

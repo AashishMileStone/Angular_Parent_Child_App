@@ -11,9 +11,9 @@ import { NgComponentOutlet } from '@angular/common';
   styleUrl: './check-bio.component.css'
 })
 export class CheckBioComponent {
-  @Input() user!: {name: string, isAdmin: boolean};
-  getBioComponent() { 
-    console.log(this.user.isAdmin)
-    return this.user.isAdmin ? AdminBioComponent : StandardBioComponent;
-  }
+  // @Input() user!: {name: string, isAdmin: boolean};
+  // getBioComponent() { 
+  //   console.log(this.user.isAdmin)
+  //   return this.user.isAdmin ? AdminBioComponent : StandardBioComponent;
+  // }
 }
